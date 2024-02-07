@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<title>
+			Comparison Survey Questions
+		</title>
+
+		<style>
+			tr:nth-child(even)
+			{
+				background-color: #D6EEEE
+			}
+		</style>
+	</head>
+	
+	<header>
+		<b> Comparison Survey Questions </b>
+	</header>
+
+	<body>
+		<p>Think back to your first epxerience playing the game and compare it to teh second fime for the following questions. The following questions are Likert questions. The scale is 1-5, where 1 is strongly disagree and 5 is strongly agree</p>
+		<form method="POST" action="save_comparison_survey_data.php">
+
+			<table>
+				<tr>
+        	                        <th>Question</th>
+                	                <th>strongly disagree</th>
+                        	        <th>disagree</th>
+                             	  	<th>neither agree or disagree</th>
+                               		<th>agree</th>
+                               		<th>strongly agree</th>
+ 	                      	</tr>
+
+				<tr>
+	                                <td>I preferred my first experience playing the game</td>
+        	                        <td style="text-align: center; width: 100px"><input type="radio" id="first_experience" name="first_experience" value="1"></td>
+                	                <td style="text-align: center; width: 100px"><input type="radio" id="first_experience" name="first_experience" value="2"></td>
+                        	        <td style="text-align: center; width: 100px"><input type="radio" id="first_experience" name="first_experience" value="3"></td>
+                                	<td style="text-align: center; width: 100px"><input type="radio" id="first_experience" name="first_experience" value="4"></td>
+                                	<td style="text-align: center; width: 100px"><input type="radio" id="first_experience" name="first_experience" value="5"></td>
+                        	</tr>
+				
+				<tr>
+                                        <td>I preferred my second experience playing the game</td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_experience" name="second_experience" value="1"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_experience" name="second_experience" value="2"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_experience" name="second_experience" value="3"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_experience" name="second_experience" value="4"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_experience" name="second_experience" value="5"></td>
+                                </tr>
+				
+				<tr>
+                                        <td>I felt like I accepted more quests that I wanted to do in the first experience</td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_accept" name="first_accept" value="1"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_accept" name="first_accept" value="2"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_accept" name="first_accept" value="3"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_accept" name="first_accept" value="4"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_accept" name="first_accept" value="5"></td>
+                                </tr>
+
+				<tr>
+                                        <td>I felt like I accepted more quests that I wanted to do in the second experience</td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_accept" name="second_accept" value="1"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_accept" name="second_accept" value="2"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_accept" name="second_accept" value="3"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_accept" name="second_accept" value="4"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_accept" name="second_accept" value="5"></td>
+                                </tr>
+				
+				<tr>
+                                        <td>I felt like I completed more quests in the first experience</td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_complete" name="first_complete" value="1"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_complete" name="first_complete" value="2"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_complete" name="first_complete" value="3"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_complete" name="first_complete" value="4"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_complete" name="first_complete" value="5"></td>
+                                </tr>
+
+				<tr>
+                                        <td>I felt like I completed more quests in the second experience</td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_complete" name="second_complete" value="1"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_complete" name="second_complete" value="2"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_complete" name="second_complete" value="3"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_complete" name="second_complete" value="4"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_complete" name="second_complete" value="5"></td>
+                                </tr>
+
+				<tr>
+                                        <td>I felt like I had more fun in the first experience</td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_fun" name="first_fun" value="1"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_fun" name="first_fun" value="2"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_fun" name="first_fun" value="3"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_fun" name="first_fun" value="4"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="first_fun" name="first_fun" value="5"></td>
+                                </tr>
+
+                                <tr>
+                                        <td>I felt like I had more fun in the second experience</td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_fun" name="second_fun" value="1"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_fun" name="second_fun" value="2"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_fun" name="second_fun" value="3"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_fun" name="second_fun" value="4"></td>
+                                        <td style="text-align: center; width: 100px"><input type="radio" id="second_fun" name="second_fun" value="5"></td>
+                                </tr>
+			</table>
+
+			</br>
+			<p>Short Answer Questions</p>
+			
+			<ol type="1">
+				<li>What was your favorite activity to do in the game? Did you feel like you got to experience a lot of that activity? Why or why not? </li>
+				<input type="text" id="fav_activity" name="fav_activity" size="200" >
+				<br>
+
+				<li>Did you feel that there was a difference between your first and second experiences? Why or why not? </li> 
+				<input type="text" id="difference" name="difference" size="200">
+				<br>
+			</ol>
+			
+			<input type="submit" value="continue" name="submit">
+		</form>
+	</body>
+</html>

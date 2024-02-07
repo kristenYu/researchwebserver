@@ -1,0 +1,127 @@
+<html>
+
+	 <head>
+                <title>
+                        Short Survey Questions
+                </title>
+
+		<style> 
+			tr:nth-child(even)
+			{
+				background-color: #D6EEEE;
+			}
+		</style>
+        </head>
+
+        <header>
+                <b> Short Survey Questions </b>
+        </header>
+
+        <body>
+                <p> The following questions are Likert questions. The scale is 1-5, where 1 is strongly disagree and 5 is strongly agree</p>
+		<form method="POST" action="save_short_survey_data_2.php">
+		<table>
+			<tr>
+				<th>Question</th>
+				<th>strongly disagree</th>
+				<th>disagree</th>
+				<th>neither agree or disagree</th>
+				<th>agree</th>
+				<th>strongly agree</th>
+			</tr>
+			<tr>
+				<td>I felt like I was able to accept quests that I wanted to do</td>
+				<td style="text-align: center; width: 100px"><input type="radio" id="pos_accept" name="pos_accept" value="1"></td>
+				<td style="text-align: center; width: 100px"><input type="radio" id="pos_accept" name="pos_accept" value="2"></td> 
+				<td style="text-align: center; width: 100px"><input type="radio" id="pos_accept" name="pos_accept" value="3"></td>	
+				<td style="text-align: center; width: 100px"><input type="radio" id="pos_accept" name="pos_accept" value="4"></td>	
+				<td style="text-align: center; width: 100px"><input type="radio" id="pos_accept" name="pos_accept" value="5"></td>	
+			</tr>
+
+			<tr>
+				<td>I felt like I was <b>not</b> able to accept quests that I wanted to do</td>
+				<td style="text-align: center; width: 100px"><input type="radio" id="neg_accept" name="neg_accept" value="1"></td>
+				<td style="text-align: center; width: 100px"><input type="radio" id="neg_accept" name="neg_accept" value="2"></td>
+				<td style="text-align: center; width: 100px"><input type="radio" id="neg_accept" name="neg_accept" value="3"></td>		
+				<td style="text-align: center; width: 100px"><input type="radio" id="neg_accept" name="neg_accept" value="4"></td>		
+				<td style="text-align: center; width: 100px"><input type="radio" id="neg_accept" name="neg_accept" value="5"></td>	
+			</tr>
+
+			<tr>
+                                <td>I felt like I was able to complete quests that I wanted to do</td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_complete" name="pos_complete" value="1"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_complete" name="pos_complete" value="2"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_complete" name="pos_complete" value="3"></td>           
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_complete" name="pos_complete" value="4"></td>           
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_complete" name="pos_complete" value="5"></td>   
+                        </tr>
+			
+			<tr>
+                                <td>I felt like I was <b>not</b> able to complete quests that I wanted to do</td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_complete" name="neg_complete" value="1"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_complete" name="neg_complete" value="2"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_complete" name="neg_complete" value="3"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_complete" name="neg_complete" value="4"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_complete" name="neg_complete" value="5"></td>
+                        </tr>
+
+				                        <tr>
+                                <td>I felt like I was a variety of quests to complete</td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="variety" name="variety" value="1"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="variety" name="variety" value="2"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="variety" name="variety" value="3"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="variety" name="variety" value="4"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="variety" name="variety" value="5"></td>
+                        </tr>
+                       
+			<tr>
+                                <td>I felt like I enjoyed playing the game</td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_enjoy" name="pos_enjoy" value="1"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_enjoy" name="pos_enjoy" value="2"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_enjoy" name="pos_enjoy" value="3"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_enjoy" name="pos_enjoy" value="4"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_enjoy" name="pos_enjoy" value="5"></td>
+                        </tr>
+
+			 <tr>
+				 <td>I felt like did <b>not</b> enjoy playing the game</td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_enjoy" name="neg_enjoy" value="1"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_enjoy" name="neg_enjoy" value="2"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_enjoy" name="neg_enjoy" value="3"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_enjoy" name="neg_enjoy" value="4"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_enjoy" name="neg_enjoy" value="5"></td>
+                        </tr>
+
+
+			<tr>
+                                <td>I feel like I would recommend playing this game to a friend</td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_recommend" name="pos_recommend" value="1"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_recommend" name="pos_recommend" value="2"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_recommend" name="pos_recommend" value="3"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_recommend" name="pos_recommend" value="4"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="pos_recommend" name="pos_recommend" value="5"></td>
+                        </tr>
+
+			<tr>
+				<td>I feel like I would <b>not</b> recommend playing this game to a friend</td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_recommend" name="neg_recommend" value="1"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_recommend" name="neg_recommend" value="2"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_recommend" name="neg_recommend" value="3"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_recommend" name="neg_recommend" value="4"></td>
+                                <td style="text-align: center; width: 100px"><input type="radio" id="neg_recommend" name="neg_recommend" value="5"></td>
+                        </tr>
+
+		
+		</table>
+			<br>
+			<br>
+			<input type="submit" value="continue" name="continue">	
+
+		</form>
+	</body>
+
+</html>
+
+
+
+
